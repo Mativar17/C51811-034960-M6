@@ -1,4 +1,5 @@
-=begin Se requiere encuestar empleados de una empresa con el fin de poder indicarles si reciben
+=begin 
+Se requiere encuestar empleados de una empresa con el fin de poder indicarles si reciben
 un incentivo considerando 2 variables. El sueldo y los años de antiguedad
 Recibe bono si:
 -Si el sueldo esta entre $350.000 y $500.000 o tiene entre 10 y 15 años de antiguedad
