@@ -4,4 +4,7 @@ Mostrar un mensaje indicando si el número tiene uno o dos dígitos.
 (Tener en cuenta qué condición debe cumplirse para tener dos dígitos un número entero)    
 =end
 
-num = gets.to_i
+puts "Ingrese un número: "
+num = gets.to_s.length
+
+puts "El número ingresado tiene #{num} digitos"
