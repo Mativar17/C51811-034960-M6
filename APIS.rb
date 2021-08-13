@@ -7,20 +7,16 @@ puts response
 
 resultado = JSON.parse(response.to_str)
 
+puts resultado
+
 resultado.each do |identificador, objeto|
     puts "Identificador: #{identificador}"
     puts "*****"
-    objeto.each do |codigo, nombre, unidad_medida, fecha, valor|
-        puts "Código: #{codigo}"
-        puts "***"
-        puts "Nombre: #{nombre}"
-        puts "***"
-        puts "Unidad de medida: #{unidad_medida}"
-        puts "***"
-        puts "Fecha: #{fecha}"
-        puts "***"
-        puts "Valor: #{valor}"
-        puts "**************************"
+    if objeto.class == Hash
+        objeto.each do |llave, valor|
+            print "#{llave}: "
+            puts "#{valor}"
+        end
     end
+    puts "-------------------------------"
 end
-

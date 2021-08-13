@@ -21,4 +21,3 @@ end
 print 'Digite la cantidad de trabajadores a ingresar: '
 cantidad = gets.to_i
 cargar_empleados cantidad
-
