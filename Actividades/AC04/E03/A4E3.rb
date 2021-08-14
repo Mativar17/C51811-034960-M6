@@ -21,3 +21,5 @@ end
 print 'Digite la cantidad de trabajadores a ingresar: '
 cantidad = gets.to_i
 cargar_empleados cantidad
+
+puts "el trabajador #{cantidad} gana #{cargar_empleados} salarios"
