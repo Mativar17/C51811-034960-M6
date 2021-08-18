@@ -13,6 +13,7 @@ response = RestClient::Request.new(
 
 #response = RestClient::Request.execute(method: :get, url: 'https://jsonplaceholder.typicode.com/posts/1')
 
+#método utilizado
 RestClient.get('https://jsonplaceholder.typicode.com/posts/') {|response, request, resultado|
     if response.code == 200
         resultado = JSON.parse(response.to_str)
