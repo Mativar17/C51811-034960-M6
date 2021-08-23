@@ -9,7 +9,7 @@ class Persona
 end
 
 class EstudianteSecundaria < Persona
-        attr_accesor :calificacion
+        attr_accessor :calificacion
     def initialize(calificacion1:, calificacion2:, calificacion3:, **options)
         #super(**options)
         @calificacion1 = calificacion1
@@ -19,12 +19,11 @@ class EstudianteSecundaria < Persona
 
     def calculamiPromedio
         promedio = ()
-
     end
 end
 
 class EstudianteUniversitaria < Persona
-        attr_accesor :calificacion
+        attr_accessor :calificacion
     def initialize(calificacion1:, calificacion2:, calificacion3:, **options)
         super(**options)
         @calificacion1 = calificacion1 #Esta nota vale un 30%

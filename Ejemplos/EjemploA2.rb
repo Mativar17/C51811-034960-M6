@@ -45,7 +45,6 @@ else
 
 end
 
-
 #clase sabado
 numeros = Array.new
 indice = 0
