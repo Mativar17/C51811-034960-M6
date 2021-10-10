@@ -55,5 +55,5 @@ while indice < cantidad
     numeros << gets.to_i
     indice += 1
 end
-print #{numeros}
+print "#{numeros}"
 

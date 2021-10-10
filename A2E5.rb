@@ -29,6 +29,26 @@ end
 puts "Se han ingresado #{contador_numeros} numeros."
 =end
 
-numeros = Array.new
+numero = Array.new
 indice = 0
 print "¿Hay algún número por ingresar? [1.SI - 2.NO]: "
+respuesta = gets.to_i
+contador_pares = 0
+contador_impares = 0
+while respuesta == 1
+    print "Ingrese un número: "
+    numero = gets.to_i
+    indice += 1
+    print "¿Ingresará otro número? [1.SI - 2.NO]: "
+    respuesta = gets.to_i
+
+    if (numero / 2 == 0)
+        contador_pares += 1
+        puts "#{contador_pares} números son pares"
+    elsif (numero / 2 != 0)
+        contador_impares += 1
+        puts "#{contador_impares} números son impares"
+    else
+        nil
+    end
+end
