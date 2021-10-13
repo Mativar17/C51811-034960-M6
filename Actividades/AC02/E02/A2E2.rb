@@ -20,14 +20,27 @@ while respuesta == 1
     print "¿Hay alguna altura más por ingresar? [1.SI - 2.NO]: "
     respuesta = gets.to_i
 
+    suma_alturas += altura
+    promedio_alturas = suma_alturas / contador_personas
+
+    if contador_personas > 0
+        puts "Se han ingresado las alturas de #{contador_personas} personas."
+        puts "La suma de las alturas es #{suma_alturas} u.m."
+        puts "El promedio de las alturas ingresadas es #{promedio_alturas} u.m."
+    else
+        puts "No se ingresaron alturas"
+    end
 end
+
+=begin
+suma_alturas += altura
+promedio_alturas = suma_alturas / contador_personas
 
 if contador_personas > 0
     puts "Se han ingresado las alturas de #{contador_personas} personas."
-    suma_alturas += altura
-    puts "La suma de las alturas es #{suma_alturas}"
-    promedio_alturas = suma_alturas / contador_personas
-    puts "El promedio de las alturas ingresadas es de #{promedio_alturas} mts."
+    puts "La suma de las alturas es #{suma_alturas} u.m."
+    puts "El promedio de las alturas ingresadas es #{promedio_alturas} u.m."
 else
-    puts "No se ingresaron alturas."
+    puts "No se ingresaron alturas"
 end
+=end
