@@ -6,8 +6,17 @@ el script debe permitir ingresar datos y solo finalizará la recepción de datos
 no exista ningun empleado más que ingresar.   
 =end
 
-def salarios
-    
+print "Ingresa el número de empleados: "
+num = gets.chomp.to_i
 
+personas = []
+num.times do 
+    print "Ingresa el nombre de la persona: "
+    personas << gets.chomp #se inserta el nombre de la persona en el arreglo
 end
 
+salarios = []
+num.times do
+    print "Ingresa el salario del empleado: "
+    salarios << gets.chomp.to_f #se inserta el salario de la persona en el arreglo
+end
