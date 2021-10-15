@@ -21,3 +21,4 @@ programas = [Word.new, PowerPoint.new, Excel.new, PowerPoint.new, Word.new]
 programas.each do |programa|
     programa.mostrarExtension
 end
+
