@@ -10,15 +10,16 @@ productos = {:carne => 10000,
     :tomate => 1000,
     :mesa => 100000,
     :celular => 200000
-    }
+}
+
+contador_productos = 0
 
 productos.each do |producto,precio|
     if precio > 20000
-        puts "la/el producto #{producto} tiene un valor superior a 20.000"
+        puts "el valor del producto #{producto} es mayor a 20.000"
+        contador_productos += 1
+        puts "#{contador_productos} productos tienen un valor mayor a 20.000"
     else
         nil
     end
 end
-
-
-puts "La cantidad de productos con valor mayor a 20000 es #{productos_precios}"

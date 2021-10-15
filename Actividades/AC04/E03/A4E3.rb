@@ -6,20 +6,31 @@ Ingresar por teclado un nombre de empleado y mostrar su sueldo o un mensaje
 que indique que no existe dicho empleado.
 =end
 
-def cargar_empleados(cantidad)
-    index = 0
-    empleados = Array.new
-    salarios = Array.new
-    while index < cantidad
-        print 'Ingrese el nombre del trabajador: '
-        empleados << gets.chomp
-        print 'Ingrese el salario de dicho trabajador: '
-        salarios << gets.to_f
-        index += 1
+empresa = Hash.new
+
+loop do
+  print "Ingrese el nombre del trabajador: "
+  trabajador = gets.chomp
+  print "Ingrese el salario: "
+  salario = gets.to_f
+  empresa[trabajador] = salario
+  print "¿Desea ingresar otro trabajador [s/n] ?: "
+  opcion = gets.chomp
+  if opcion == "n"
+    break
+  end
+end
+
+puts empresa
+puts '--------------'
+
+puts 'Ingrese el nombre de un trabajador para conocer su salario: '
+nombre = gets.chomp
+
+empresa.each do |trabajador, salario|
+    if nombre = trabajador
+        puts "El salario del trabajador #{trabajador} es #{salario}"
+    else
+        puts 'El trabajador no se encuentra en nuestro registro. Intente con otro'
     end
 end
-print 'Digite la cantidad de trabajadores a ingresar: '
-cantidad = gets.to_i
-cargar_empleados cantidad
-
-puts "el trabajador #{cantidad} gana #{cargar_empleados} salarios"

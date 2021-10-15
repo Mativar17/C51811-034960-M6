@@ -12,4 +12,3 @@ agenda = {'10 de agosto' => 'lavar el auto',
 agenda.each do |fecha,actividad|
     puts "El día #{fecha} tengo que #{actividad}"
 end
-
