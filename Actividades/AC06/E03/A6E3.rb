@@ -7,3 +7,19 @@ Posteriomente almacenar los 4 objetos de personas en un arreglo,
 recorrer ese arreglo y mostrar los datos de cada persona.
     
 =end
+
+class Persona
+
+    def initialize(nombre: , edad: )
+      @nombre = nombre
+      @edad = edad
+    end
+
+    def hola
+        
+    end
+    
+
+
+    end
+end
