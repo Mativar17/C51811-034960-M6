@@ -15,11 +15,5 @@ class Persona
       @edad = edad
     end
 
-    def hola
-        
-    end
     
-
-
-    end
 end
