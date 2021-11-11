@@ -5,7 +5,10 @@ calcular e imprimir su suma, resta, multiplicación y división,
 cada una en un método.
 =end
 
-class Numero
+class Operaciones
+
+    attr_reader :numero1 , :numero2
+    attr_writer :numero1 , :numero2
 
     def initialize(numero1: , numero2: )
       @numero1 = numero1
@@ -30,10 +33,18 @@ class Numero
 
 end
 
+puts 'Ingrese un número entero: '
+numero1 = gets.to_i
+
+puts 'Ingrese otro número entero: '
+numero2 = gets.to_i
+
+
 suma = numero1 + numero2
 multiplicacion = numero1 * numero2
 resta = numero1 - numero2
 division = numero1 / numero2
+
 
 serie = Numero.new(numero1: 12, numero2: 4)
 puts serie.suma
