@@ -15,35 +15,44 @@ class Numero
 end
 
 class Operaciones
+
+    def initialize(suma:, multiplicacion:, resta:, division:)
+        @suma = suma
+        @multiplicacion = multiplicacion
+        @resta = resta
+        @division = division
+    end
     
     def suma
-        @suma = suma
+        @suma = numero1 + numero2
         print "La suma de los números ingresados es #{suma}. "
     end
 
     def multiplicacion
-        @multiplicacion = multiplicacion
+        @multiplicacion = numero1 * numero2
         print "El producto de los números ingresados es #{multiplicacion}. "
     end
 
     def resta
-        @resta = resta
+        @resta = numero1 - numero2
         print "La resta de los números ingresados es #{resta}. "
     end
 
     def division
-        @division = division
+        @division = numero1 / numero2
         print "La razón de los números ingresados es #{division}. "
     end
 
 end
 
-suma = numero1 + numero2
-multiplicacion = numero1 * numero2
-resta = numero1 - numero2
-division = numero1 / numero2
+print 'Ingrese un número entero: '
+numero1 = gets.to_i
+print 'Ingrese otro número entero: '
+numero2 = gets.to_i
 
-serie = Numero.new(numero1: gets.to_i, numero2: gets.to_i)
-puts serie.suma
+
+
+
+
 
 
